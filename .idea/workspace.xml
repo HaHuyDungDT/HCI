@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b1a66ed-3379-4083-86c6-13b8892cfacc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab3/iconbook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/lesson.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/pi2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/pi3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/py9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/lab3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lab3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/c.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/exercise.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/exercise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/exercise1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/exercise1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/lab2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/lab2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/python.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/python.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/lab1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/lab2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/lab3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="9b1a66ed-3379-4083-86c6-13b8892cfacc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +91,7 @@
       <workItem from="1727494889119" duration="3156000" />
       <workItem from="1727526076037" duration="1707000" />
       <workItem from="1728642207321" duration="4521000" />
-      <workItem from="1729090001473" duration="6635000" />
+      <workItem from="1729090001473" duration="7156000" />
     </task>
     <servers />
   </component>
