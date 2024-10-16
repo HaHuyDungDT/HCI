@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b1a66ed-3379-4083-86c6-13b8892cfacc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,8 +44,9 @@
     "JavaScript Debug.Index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/HCI/.idea",
+    "last_opened_file_path": "D:/HCI",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,6 +62,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\HCI" />
+      <recent name="D:\HCI\Lab2" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,7 +92,9 @@
       <option name="presentableId" value="Default" />
       <updated>1727494887765</updated>
       <workItem from="1727494889119" duration="3156000" />
-      <workItem from="1727526076037" duration="1399000" />
+      <workItem from="1727526076037" duration="1707000" />
+      <workItem from="1728642207321" duration="4521000" />
+      <workItem from="1729090001473" duration="300000" />
     </task>
     <servers />
   </component>
