@@ -2,41 +2,41 @@ const lessonData = {
     1: {
         title: '1. Introduction to Python',
         slides: [
-            'py1.jpg',
-            'pi2.png',
-            'pi3.png'
+            '../img/py1.jpg',
+            '../img/pi2.png',
+            '../img/pi3.png'
         ]
     },
     2: {
         title: '2. Setting Up the Development Environment',
         slides: [
-            'py4.jpg',
-            'py5.jpg',
-            'py6.jpg'
+            '../img/py4.jpg',
+            '../img/py5.jpg',
+            '../img/py6.jpg'
         ]
     },
     3: {
         title: '3. Django Basic',
         slides: [
-            'py7.jpg',
-            'py8.jpg',
-            'py9.jpg'
+            '../img/py7.jpg',
+            '../img/py8.jpg',
+            '../img/py9.jpg'
         ]
     },
     4: {
         title: '4. Django Advanced Concepts',
         slides: [
-            'py10.jpg',
-            'py11.png',
-            'py12.png'
+            '../img/py10.jpg',
+            '../img/py11.png',
+            '../img/py12.png'
         ]
     },
     5: {
         title: '5. Pythonanywhere',
         slides: [
-            'py13.jpg',
-            'py14.png',
-            'py15.png'
+            '../img/py13.jpg',
+            '../img/py14.png',
+            '../img/py15.png'
         ]
     },
 };
