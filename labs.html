@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha Huy Dung - My Website</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="../assets/css/slick.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="../assets/css/LineIcons.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="../assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-primary text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="../index.html">
+                                <img src="../assets/images/logo.svg" alt="Logo">
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne"
+                                aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="../about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll labs-tab" href="#labs">Labs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <ul>
+                                    <li><a class="light" href="#">Let's Go</a></li>
+                                </ul>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+        <!-- Tabs menu -->
+        <div class="container tabs-menu mb-4" id="labs-tabs" style="display:none;">
+            <a href="../lab1/lab1.html" class="tab-link active" data-tab="lab1">Lab 1</a>
+            <a href="../lab2/lab2.html" class="tab-link" data-tab="lab2">Lab 2</a>
+            <a href="../lab3/lab3.html" class="tab-link" data-tab="lab3">Lab 3</a>
+            <a href="../lab4/lab4.html" class="tab-link" data-tab="lab4">Lab 4</a>
+            <a href="../lab5/lab5.html" class="tab-link" data-tab="lab5">Lab 5</a>
+            <a href="../lab6/lab6_req5_6.html" class="tab-link" data-tab="lab6_req5_6">Lab 6</a>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main style="width: 1200px;">
+        <section id="labs">
+            <div class="container-fluid"    >
+                <div class="header1">
+                    <h1>Hà Huy Dũng - Labs Viewer</h1>
+                </div>
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs" id="labTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="loadLab('../lab1/lab1.html', this)">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab2/lab2.html', this)">Lab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab3/lab3.html', this)">Lab 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab4/lab4.html', this)">Lab 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab5/lab5.html', this)">Lab 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab6/lab6_req5_6.html', this)">Lab 6_1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab6/lab6_req7.html', this)">Lab 6_2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadLab('../lab6/lab6_req8.html', this)">Lab 6_3</a>
+                    </li>
+                </ul>
+        
+                <!-- Iframe Section -->
+                <div class="iframe-container" style="width: 100%; height: 600px; border: 1px solid #ccc; margin-top: 20px;">
+                    <iframe id="lab-viewer" src="../lab1/lab1.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-70 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-logo-support d-md-flex align-items-end justify-content-between">
+                            <div class="footer-logo d-flex align-items-end pt-30">
+                                <a href="index.html"><img src="../assets//images/footer-logo.svg" alt="Logo"></a>
+                            </div> <!-- footer logo -->
+                        </div> <!-- footer logo support -->
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-xl-6 col-lg-4 col-sm-12">
+                        <div class="footer-support ">
+                            <span class="number">09-215-5596</span>
+                            <span class="mail">hello@customeagency.com</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                            <li><a href="#"><i class="lni-instagram-original"></i></a></li>
+                            <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-4">
+                        <div class="footer-link">
+                            <h6 class="footer-title">Company</h6>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4">
+                        <div class="footer-link">
+                            <h6 class="footer-title">Product & Services</h6>
+                            <ul>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Developer</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4">
+                        <div class="footer-link">
+                            <h6 class="footer-title">Help & Suuport</h6>
+                            <ul>
+                                <li><a href="#">Support Center</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <!-- footer widget -->
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright text-center">
+                            <p class="text">Template Crafted by <a rel="nofollow" href="https://uideck.com">UIdeck</a> -
+                                UI Powered by <a el="nofollow" href="https://rebrand.ly/ayroui">AyroUI</a></p>
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+    <!-- Scripts for Form Validation and UI Interactions -->
+        <scripts src="../js/lab1.js"></script>
+            <script>
+                function loadLab(labUrl, element) {
+                    // Đổi URL trong iframe
+                    document.getElementById("lab-viewer").src = labUrl;
+            
+                    // Xóa class 'active' khỏi tất cả các tab
+                    const tabs = document.querySelectorAll("#labTabs .nav-link");
+                    tabs.forEach(tab => tab.classList.remove("active"));
+            
+                    // Thêm class 'active' vào tab được nhấn
+                    element.classList.add("active");
+                }
+            </script>
+            
+            
+
+        <!--====== jquery js ======-->
+        <script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+        <!--====== Bootstrap js ======-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+
+
+        <!--====== Images Loaded js ======-->
+        <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+
+        <!--====== Scrolling Nav js ======-->
+        <script src="../assets/js/jquery.easing.min.js"></script>
+        <script src="../assets/js/scrolling-nav.js"></script>
+
+
+        <!--====== Slick js ======-->
+        <script src="../assets/js/slick.min.js"></script>
+
+
+        <!--====== Main js ======-->
+        <script src="../assets/js/main.js"></script>
+
+        <script src="../js/all.js"></script>
+</body>
+
+</html>

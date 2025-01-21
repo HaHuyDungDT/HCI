@@ -1,11 +1,12 @@
 body {
-    background: #343a40;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: white;
+    min-height: 100vh;   
 }
 .login-container {
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;

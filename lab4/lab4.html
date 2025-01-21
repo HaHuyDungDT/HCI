@@ -1,234 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>Ha Huy Dung - My Website</title>
+    
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+
+    <!--====== CSS Files ======-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/LineIcons.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="../css/lab4.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Business Operations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cloud Computing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cybersecurity</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Data Science</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Development</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">IT Operations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Language Learning</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Leadership & Management</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Marketing</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="row">
-    <div class="col-auto">
-        <div class="profile-circle">N</div>
-    </div>
-    <div class="col">
-        <h2 style="margin-top: 20px; margin-bottom: 20px;">Welcome back, Dung Ha Huy</h2>
-        <a href="#" class="text-primary" style="text-decoration: none; font-weight: bold;" >Add occupation and interests</a>
-    </div>
-</div>
-<div class="row mt-4" style="padding-left: 10px; padding-right: 10px;">
-    <div class="col-12">
-        <div class="card shadow-sm">
-            <div class="card-body">
-
-                <div class="d-flex justify-content-between align-items-center mb-3" style="margin-right: 50px">
-                    <div><h5 class="card-title">Weekly Streak</h5>
-                        <p class="card-text text-muted">One ring down, one to go. Keep it up!</p></div>
-                    <div class="d-flex flex-column align-items-end">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-fire streak-icon me-2" style="font-size: 50px;"></i>
-                            <span class="fw-bold fs-5">2 weeks</span>
-                        </div>
-                        <span class="text-muted ms-2">Current streak</span>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <svg class="circle-progress" viewBox="0 0 36 36">
-                            <!-- Outer circle (course min) -->
-                            <path class="circle-progress-path" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#E6E6E6" stroke-width="3" />
-                            <path class="circle-progress-path" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#20B2AA" stroke-width="3" stroke-dasharray="36.67, 100" />
-
-                            <!-- Inner circle (visit) -->
-                            <path class="circle-progress-path" d="M18 7.0845 a 10.9155 10.9155 0 0 1 0 21.831 a 10.9155 10.9155 0 0 1 0 -21.831" fill="none" stroke="#E6E6E6" stroke-width="3" />
-                            <path class="circle-progress-path" d="M18 7.0845 a 10.9155 10.9155 0 0 1 0 21.831 a 10.9155 10.9155 0 0 1 0 -21.831" fill="none" stroke="#FFA500" stroke-width="3" stroke-dasharray="100, 100" />
-                        </svg>
-                        <div class="mt-2 text-center">
-                            <small class="text-muted">11/30 course min</small><br>
-                            <small class="text-muted">4/1 visit</small>
-                            <small class="text-muted d-block mt-2">Oct 13 - 19</small>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="text-primary float-end" style="text-decoration: none; font-weight: bold;">See all activity</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div>
-    <h4 class="mt-5" style="margin-left: 30px">Pick up where you left off</h4>
+    <!-- Header Section -->
+   
+    <!-- Main Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav2">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong>Courser</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong>Learning paths</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong>Certification preparation</strong></a>
-                    </li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Business Operations</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Cloud Computing</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Cybersecurity</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Data Science</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Development</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">IT Operations</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Language Learning</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Leadership & Management</a></li>
+                    <li class="nav-item-1"><a class="nav-link" href="#">Marketing</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="row">
+        <div class="col-auto">
+            <div class="profile-circle">N</div>
+        </div>
+        <div class="col">
+            <h2 style="margin-top: 20px; margin-bottom: 20px;">Welcome back, Dung Ha Huy</h2>
+            <a href="#" class="text-primary" style="text-decoration: none; font-weight: bold;" >Add occupation and interests</a>
+        </div>
+    </div>
     <div class="row mt-4" style="padding-left: 10px; padding-right: 10px;">
-        <div class="col-md-4">
-            <div class="course-card">
-                <iframe width="450" height="315" src="https://www.youtube.com/embed/tVdaxMMW9q8?si=Rl9ISmooIRAQ2EmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h5>FPT_ISMS Refresh Training S2 2024 (Video)</h5>
-                <p>1. Introduction</p>
-                <p>Lecture • 1m</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="course-card">
-                <iframe width="450" height="315" src="https://www.youtube.com/embed/tVdaxMMW9q8?si=rVMhFgKPytWfG5CX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h5>MuleSoft 4.X Complete Guide For Beginners</h5>
-                <p>2. Integration introduction</p>
-                <p>Lecture • 6m left</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="course-card">
-                <iframe width="450" height="315" src="https://www.youtube.com/embed/Z6uylatF5VY?si=ulBDBku4nanRawE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h5>English Vocabulary: 504 Essential Words</h5>
-                <p>7. Quiz and Questions</p>
-                <p>Quiz • 9 questions</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div>
-    <div style="margin-left: 30px"><h3 style="display: inline; margin-right: 10px; margin-top: 30px">Based on your certification interests, we recommend</h3>
-        <a href="#" style="display: inline;"><strong>Edit certification interests</strong></a></div>
-    <!-- Course Cards -->
-    <div class="row" style="padding-top: 30px; margin-top: 30px; background-color: white">
-        <!-- Course 1 -->
-        <div class="col-md-3">
-            <div class="course-card">
-                <img src="../img/lab4img1.png" alt="Course Image 1">
-                <h5>Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808</h5>
-                <p>Andrii Piatakha, Learn IT University</p>
-                <div class="course-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <span>4.6</span> (438)
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 2 -->
-        <div class="col-md-3">
-            <div class="course-card">
-                <img src="../img/lab4img2.png" alt="Course Image 2">
-                <h5>Oracle Java Certification - Pass the Associate 1Z0-808 Exam</h5>
-                <p>Tim Buchalka's Learn Programming Academy</p>
-                <div class="course-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <span>4.6</span> (6,906)
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 3 -->
-        <div class="col-md-3">
-            <div class="course-card">
-                <img src="../img/lab4img3.png" alt="Course Image 3">
-                <h5>Complete Java SE 8 Developer Bootcamp - OCA Prep Included</h5>
-                <p>Intertech Training, Jeff Jensen</p>
-                <div class="course-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <span>4.6</span> (9,726)
-                </div>
-            </div>
-        </div>
-
-        <!-- Course 4 -->
-        <div class="col-md-3">
-            <div class="course-card">
-                <img src="../img/lab4img4.png" alt="Course Image 4">
-                <h5>Spring Professional Certification Exam Tutorial - Module 02</h5>
-                <p>Dominik Cebula</p>
-                <div class="course-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <span>4.6</span> (1,121)
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+    
+                    <div class="d-flex justify-content-between align-items-center mb-3" style="margin-right: 50px">
+                        <div><h5 class="card-title">Weekly Streak</h5>
+                            <p class="card-text text-muted">One ring down, one to go. Keep it up!</p></div>
+                        <div class="d-flex flex-column align-items-end">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-fire streak-icon me-2" style="font-size: 50px;"></i>
+                                <span class="fw-bold fs-5">2 weeks</span>
+                            </div>
+                            <span class="text-muted ms-2">Current streak</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <svg class="circle-progress" viewBox="0 0 36 36">
+                                <!-- Outer circle (course min) -->
+                                <path class="circle-progress-path" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#E6E6E6" stroke-width="3" />
+                                <path class="circle-progress-path" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#20B2AA" stroke-width="3" stroke-dasharray="36.67, 100" />
+    
+                                <!-- Inner circle (visit) -->
+                                <path class="circle-progress-path" d="M18 7.0845 a 10.9155 10.9155 0 0 1 0 21.831 a 10.9155 10.9155 0 0 1 0 -21.831" fill="none" stroke="#E6E6E6" stroke-width="3" />
+                                <path class="circle-progress-path" d="M18 7.0845 a 10.9155 10.9155 0 0 1 0 21.831 a 10.9155 10.9155 0 0 1 0 -21.831" fill="none" stroke="#FFA500" stroke-width="3" stroke-dasharray="100, 100" />
+                            </svg>
+                            <div class="mt-2 text-center">
+                                <small class="text-muted">11/30 course min</small><br>
+                                <small class="text-muted">4/1 visit</small>
+                                <small class="text-muted d-block mt-2">Oct 13 - 19</small>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="text-primary float-end" style="text-decoration: none; font-weight: bold;">See all activity</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Personalize Section -->
-    <div class="personalize-section text-center">
-        <h3><i class="fa-solid fa-user" style="color: yellow"></i></h3>
-        <h4>Personalize your learning experience</h4>
-        <p>Add your occupation and interests to get better content recommendations.</p>
-        <button type="button" class="btn btn-primary">Add occupation and interests</button>
+    
+    <div>
+        <h4 class="mt-5" style="margin-left: 30px">Pick up where you left off</h4>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item-1">
+                            <a class="nav-link" href="#"><strong>Courser</strong></a>
+                        </li>
+                        <li class="nav-item-1">
+                            <a class="nav-link" href="#"><strong>Learning paths</strong></a>
+                        </li>
+                        <li class="nav-item-1">
+                            <a class="nav-link" href="#"><strong>Certification preparation</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-4" style="padding-left: 10px; padding-right: 10px;">
+            <div class="col-md-4">
+                <div class="course-card">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed/tVdaxMMW9q8?si=Rl9ISmooIRAQ2EmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h5>FPT_ISMS Refresh Training S2 2024 (Video)</h5>
+                    <p>1. Introduction</p>
+                    <p>Lecture • 1m</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed/tVdaxMMW9q8?si=rVMhFgKPytWfG5CX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h5>MuleSoft 4.X Complete Guide For Beginners</h5>
+                    <p>2. Integration introduction</p>
+                    <p>Lecture • 6m left</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed/Z6uylatF5VY?si=ulBDBku4nanRawE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h5>English Vocabulary: 504 Essential Words</h5>
+                    <p>7. Quiz and Questions</p>
+                    <p>Quiz • 9 questions</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    
+    <hr>
+    <div>
+        <div style="margin-left: 30px"><h3 style="display: inline; margin-right: 10px; margin-top: 30px">Based on your certification interests, we recommend</h3>
+            <a href="#" style="display: inline;"><strong>Edit certification interests</strong></a></div>
+        <!-- Course Cards -->
+        <div class="row" style="padding-top: 30px; margin-top: 30px; background-color: white">
+            <!-- Course 1 -->
+            <div class="col-md-3">
+                <div class="course-card">
+                    <img src="../img/lab4img1.png" alt="Course Image 1">
+                    <h5>Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808</h5>
+                    <p>Andrii Piatakha, Learn IT University</p>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.6</span> (438)
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Course 2 -->
+            <div class="col-md-3">
+                <div class="course-card">
+                    <img src="../img/lab4img2.png" alt="Course Image 2">
+                    <h5>Oracle Java Certification - Pass the Associate 1Z0-808 Exam</h5>
+                    <p>Tim Buchalka's Learn Programming Academy</p>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.6</span> (6,906)
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Course 3 -->
+            <div class="col-md-3">
+                <div class="course-card">
+                    <img src="../img/lab4img3.png" alt="Course Image 3">
+                    <h5>Complete Java SE 8 Developer Bootcamp - OCA Prep Included</h5>
+                    <p>Intertech Training, Jeff Jensen</p>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.6</span> (9,726)
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Course 4 -->
+            <div class="col-md-3">
+                <div class="course-card">
+                    <img src="../img/lab4img4.png" alt="Course Image 4">
+                    <h5>Spring Professional Certification Exam Tutorial - Module 02</h5>
+                    <p>Dominik Cebula</p>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.6</span> (1,121)
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Personalize Section -->
+        <div class="personalize-section text-center">
+            <h3><i class="fa-solid fa-user" style="color: yellow"></i></h3>
+            <h4>Personalize your learning experience</h4>
+            <p>Add your occupation and interests to get better content recommendations.</p>
+            <button type="button" class="btn btn-primary">Add occupation and interests</button>
+        </div>
+    </div>
+    
 
+    <!-- Scripts for Form Validation and UI Interactions -->
+    <script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

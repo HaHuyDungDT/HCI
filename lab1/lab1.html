@@ -1,252 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Manage Book In Library</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="../css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha Huy Dung - My Website</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="../assets/css/slick.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="../assets/css/LineIcons.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="../assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="../about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lab1.html">Labs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        <!-- Tabs menu -->
+        <div class="container tabs-menu mb-4" id="labs-tabs" style="display:none;">
+            <a href="../lab1/lab1.html" class="tab-link active" data-tab="lab1">Lab 1</a>
+            <a href="../lab2/lab2.html" class="tab-link" data-tab="lab2">Lab 2</a>
+            <a href="../lab3/lab3.html" class="tab-link" data-tab="lab3">Lab 3</a>
+            <a href="../lab4/lab4.html" class="tab-link" data-tab="lab4">Lab 4</a>
+            <a href="../lab5/lab5.html" class="tab-link" data-tab="lab5">Lab 5</a>
+            <a href="../lab6/lab6.html" class="tab-link" data-tab="lab6">Lab 6</a>
         </div>
-    </div>
-</nav>
-<div class="container">
-    <div>
-        <h1>Manage Book In Library</h1>
-    </div>
-    <h5>LIST BOOK
-        <button class="btn btn-custom" id="newButton" data-bs-toggle="modal" data-bs-target="#newBookModal"
-                style="margin-left: 1100px; border-style: solid; border-color: lawngreen; background-color: limegreen">
-            <i class="bi bi-plus"></i> <b>NEW</b>
-        </button>
-    </h5>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" id="searchInput" placeholder="Search by title" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
-    </div>
+    </header>
 
-    <table class="table">
-        <thead class="table-dark">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-            <th scope="col">Genre</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Edit</th>
-            <th scope="col">Delete</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Atomic habits</td>
-            <td>James Clear</td>
-            <td>Self-Help</td>
-            <td>100$</td>
-            <td>10</td>
-            <td><a href="#" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-book="Atomic habits"
-                   data-bs-author="James Clear" data-bs-genre="Self-Help" data-bs-price="100$" data-bs-quantity="10"><i
-                    class="bi bi-pencil"></i></a></td>
-            <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="bi bi-trash"></i></a></td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Kane and Abel</td>
-            <td>Jeffrey Archer</td>
-            <td>Novel</td>
-            <td>200$</td>
-            <td>10</td>
-            <td>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-book="Kane and Abel" data-bs-author="Jeffrey Archer" data-bs-genre="Novel" data-bs-price="200$" data-bs-quantity="10">
-                    <i class="bi bi-pencil"></i>
-                </a>
-            </td>
-            <td>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                    <i class="bi bi-trash"></i>
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Clean Code</td>
-            <td>Robert Martin</td>
-            <td>Study</td>
-            <td>300$</td>
-            <td>10</td>
-            <td>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-book="Clean Code" data-bs-author="Robert Martin" data-bs-genre="Study" data-bs-price="300$" data-bs-quantity="10">
-                    <i class="bi bi-pencil"></i>
-                </a>
-            </td>
-            <td>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                    <i class="bi bi-trash"></i>
-                </a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <nav aria-label="Page navigation example" class="mt-4">
-        <ul class="pagination justify-content-center">
-            <li class="page-item">
-                <a class="page-link" href="../lab1/lab1.html">Lab 1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="../lab2/lab2.html">Lab 2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="../lab3/lab3.html">Lab 3</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="../lab4/lab4.html">Lab 4</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="../lab4/lab4_2.html">Lab 4-2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="../lab5/lab5.html">Lab 5</a>
-            </li>
-        </ul>
-    </nav>
 
-</div>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2>Create Account</h2>
+        <form id="userForm">
+            <!-- Username Input -->
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" maxlength="255"
+                    required>
+                <small class="form-text text-danger" id="usernameError"></small>
+            </div>
 
-<footer>
-    <p>&copysr;My website is perfect | By HaHuyDung</p>
-</footer>
-<!-- Modal delete -->
-<div class="modal" id="deleteModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Delete book</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Password Input -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                        maxlength="255" required>
+                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">Show</button>
+                </div>
+                <small class="form-text text-danger" id="passwordError"></small>
             </div>
-            <div class="modal-body">
-                <p>Are you sure you want to delete this book?</p>
+
+            <!-- Email Input -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" maxlength="255"
+                    required>
+                <small class="form-text text-danger" id="emailError"></small>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+
+            <!-- Full Name Input (Optional) -->
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name (optional)</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                    maxlength="255">
             </div>
-        </div>
+
+            <!-- Role Dropdown -->
+            <div class="mb-3">
+                <label for="role" class="form-label">Role</label>
+                <select class="form-select" id="role" required>
+                    <option value="">Select a role...</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <!-- More roles can be added here -->
+                </select>
+                <small class="form-text text-danger" id="roleError"></small>
+            </div>
+
+            <!-- Profile Picture Upload -->
+            <div class="mb-3">
+                <label for="profilePicture" class="form-label">Profile Picture</label>
+                <input type="file" class="form-control" id="profilePicture" accept="image/*">
+                <div class="mt-2">
+                    <img id="preview" src="#" alt="Image Preview" style="display: none; max-width: 200px;">
+                </div>
+            </div>
+
+            <!-- Read-only Fields for Account Creation and Last Updated -->
+            <div class="mb-3">
+                <label class="form-label">Account Created At</label>
+                <input type="text" class="form-control" id="createdAt" value="2024-11-02 14:00" readonly>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Last Updated At</label>
+                <input type="text" class="form-control" id="updatedAt" value="2024-11-02 14:00" readonly>
+            </div>
+
+            <!-- Action Buttons -->
+            <button type="submit" class="btn btn-primary" id="submitButton" disabled>Create Account</button>
+            <button type="button" class="btn btn-secondary" id="cancelButton">Cancel</button>
+        </form>
     </div>
 
-</div>
+    <!--====== FOOTER PART ENDS ======-->
+    <!-- Scripts for Form Validation and UI Interactions -->
+    <scripts src="../js/lab1.js">
+        </script>
+
+        <!--====== jquery js ======-->
+        <script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+        <!--====== Bootstrap js ======-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
 
 
-<!-- Modal Edit -->
-<div class="modal" id="editModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Edit Book</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="editBookForm">
-                    <div class="mb-3">
-                        <label for="bookTitle" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="bookTitle">
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookAuthor" class="form-label">Author</label>
-                        <input type="text" class="form-control" id="bookAuthor">
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookGenre" class="form-label">Genre</label>
-                        <input type="text" class="form-control" id="bookGenre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookPrice" class="form-label">Price</label>
-                        <input type="text" class="form-control" id="bookPrice">
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookQuantity" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="bookQuantity">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="saveChangesButton">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
+        <!--====== Images Loaded js ======-->
+        <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
 
-<!-- Modal New Book -->
-<div class="modal" id="newBookModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Add New Book</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="newBookForm">
-                    <div class="mb-3">
-                        <label for="newBookTitle" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="newBookTitle" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="newBookAuthor" class="form-label">Author</label>
-                        <input type="text" class="form-control" id="newBookAuthor" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="newBookGenre" class="form-label">Genre</label>
-                        <input type="text" class="form-control" id="newBookGenre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="newBookPrice" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="newBookPrice" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="newBookQuantity" class="form-label">Quantity</label>
-                        <input type="number" class="form-control" id="newBookQuantity" required>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="addBookButton">Add Book</button>
-            </div>
-        </div>
-    </div>
-</div>
+        <!--====== Scrolling Nav js ======-->
+        <script src="../assets/js/jquery.easing.min.js"></script>
+        <script src="../assets/js/scrolling-nav.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-<script src="bookjs.js"></script>
+        <!--====== Slick js ======-->
+        <script src="../assets/js/slick.min.js"></script>
+
+
+        <!--====== Main js ======-->
+        <script src="../assets/js/main.js"></script>
+
+        <script src="../js/all.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Focused Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        .feature-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #5e3dfa;
+        }
+
+        .feature-card.active {
+            border-color: #5e3dfa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .enterprise-badge {
+            background-color: #eae6ff;
+            color: #5e3dfa;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .score-chart {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 16px;
+        }
+
+        .badge-info {
+            background-color: #f0f8ff;
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .highlight {
+            color: #5e3dfa;
+            font-weight: bold;
+        }
+
+        .chart-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .score-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            color: #5e3dfa;
+            font-weight: bold;
+        }
+
+        .badge-info {
+            background-color: #f0f8ff;
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Phần bên trái: Tính năng -->
+            <div class="col-lg-6">
+                <h3 class="mb-4 fw-bold">Learning focused on your goals</h3>
+
+                <!-- Card 1 -->
+                <div class="feature-card active">
+                    <h5 class="fw-bold"><i class="bi bi-hand-thumbs-up me-2"></i>Hands-on training</h5>
+                    <p>Upskill effectively with AI-powered coding exercises, practice tests, and quizzes.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <h5 class="fw-bold"><i class="bi bi-card-checklist me-2"></i>Certification prep</h5>
+                    <p>Prep for industry-recognized certifications by solving real-world challenges and earn badges along the way.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <h5 class="fw-bold"><i class="bi bi-bar-chart me-2"></i>Insights and analytics <span
+                            class="enterprise-badge">Enterprise Plan</span></h5>
+                    <p>Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.</p>
+                    <a href="#" class="text-primary">Find out more →</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <h5 class="fw-bold"><i class="bi bi-diagram-3 me-2"></i>Customizable content <span
+                            class="enterprise-badge">Enterprise Plan</span></h5>
+                    <p>Create tailored learning paths for team and organization goals and even host your own content and resources.</p>
+                    <a href="#" class="text-primary">Find out more →</a>
+                </div>
+            </div>
+
+            <!-- Phần bên phải: Biểu đồ và điểm số -->
+            <div class="col-lg-6">
+                <div class="score-info">
+                    <h4>Your score: <span class="highlight">159</span></h4>
+                    <p>Your performance was better than <strong>88%</strong> of learners who completed this assessment.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="progressChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('progressChart').getContext('2d');
+        const progressChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Limited', 'Developing', 'Established', 'Superior'],
+                datasets: [{
+                    label: 'Your Score',
+                    data: [20, 60, 100, 159], // Dữ liệu giả định
+                    borderColor: '#5e3dfa',
+                    backgroundColor: 'rgba(94, 61, 250, 0.2)',
+                    fill: true,
+                    tension: 0.4, // Làm đường cong mềm mại hơn
+                    pointBackgroundColor: '#5e3dfa',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                },
+                scales: {
+                    y: {
+                        min: 0,
+                        max: 200,
+                        ticks: {
+                            stepSize: 50,
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

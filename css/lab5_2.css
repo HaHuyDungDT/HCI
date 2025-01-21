@@ -1,0 +1,67 @@
+body {
+    background-color: #f8f9fa;
+}
+.header-section {
+    background-color: #333; /* Màu đen nhẹ */
+    padding: 15px;
+}
+.header-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.info-text {
+    color: lightgray;
+    font-size: 14px;
+}
+.sub-header-text {
+    font-weight: bold;
+    font-size: 16px;
+}
+.badge-btn {
+    background-color: #9c27b0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.badge-btn:hover {
+    background-color: #8e24aa;
+}
+.nav-tabs .nav-link {
+    color: white;
+}
+.nav-tabs .nav-link.active {
+    color: #9c27b0;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: #9c27b0 #9c27b0 #333;
+}
+.card-custom {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.card-body {
+    padding: 15px;
+}
+.progress-bar-custom {
+    background-color: #9c27b0;
+    height: 2px;
+    width: 100%;
+}
+.star-rating {
+    color: #f4b400;
+    font-size: 16px;
+}
+.rating-text {
+    font-size: 12px;
+    color: gray;
+}

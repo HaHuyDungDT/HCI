@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderbyte Evaluation Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #0f1d2e;
+            padding: 15px 30px;
+        }
+        
+        .navbar-brand {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1de9b6;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background-color: #ffffff;
+            color: #0f1d2e;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            color: #1de9b6;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .input-group {
+            max-width: 450px;
+            margin: 25px auto;
+        }
+
+        .input-group input {
+            border-radius: 30px 0 0 30px;
+            padding: 15px;
+        }
+
+        .input-group .btn {
+            border-radius: 0 30px 30px 0;
+            background-color: #1de9b6;
+            color: white;
+        }
+
+        .learn-more {
+            display: block;
+            color: #1de9b6;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        .skills-container {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .skill-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .skill-badge {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-badge img {
+            height: 24px;
+            width: 24px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">coderbyte</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav ms-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Organizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Evaluate Candidates Quickly, Affordably, and Accurately</h1>
+        <p>The #1 platform for technical assessments, interviews, and projects.<br>
+            Get unlimited candidates and admins on every plan.</p>
+
+        <div class="input-group">
+            <input type="email" class="form-control" placeholder="Work email address" aria-label="Work email address">
+            <button class="btn" type="button">Start Trial</button>
+        </div>
+        <a href="#" class="learn-more">Learn more</a>
+        <div class="skills-container">
+            <!-- Left Icons -->
+            <div class="skill-icons">
+                <div class="skill-badge"><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Python"> Python</div>
+                <div class="skill-badge"><img src="https://cdn-icons-png.flaticon.com/512/919/919841.png" alt="Node.js"> Node.js</div>
+                <div class="skill-badge"><img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React"> React</div>
+            </div>
+    
+            <!-- Right Icons -->
+            <div class="skill-icons">
+                <div class="skill-badge"><img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Java"> Java</div>
+                <div class="skill-badge"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"> HTML</div>
+                <div class="skill-badge"><img src="https://cdn-icons-png.flaticon.com/512/919/919837.png" alt="Ruby"> Ruby</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

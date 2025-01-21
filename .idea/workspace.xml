@@ -4,76 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b1a66ed-3379-4083-86c6-13b8892cfacc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/lab4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/lab4_2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/lab4img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/lab4img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/lab4img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/lab4img4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/lab1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/c.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/exercise.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/exercise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/exercise1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/exercise1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/python.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/python.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/iconbook.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/iconbook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/lab3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lab3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/lesson.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lesson.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/pi2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/pi2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/pi3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/pi3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py11.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/py11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py12.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/py12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py14.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/py14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py15.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/py15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/py9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/py9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/lab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lab3.js" afterDir="false" />
-    </list>
+    <list default="true" id="b3952aab-c322-420a-926a-f3162db9859f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="TypeScript File" />
-        <option value="CSS File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2mgOjUDR4PLjIy4wT853vlvTiJQ" />
+  <component name="ProjectId" id="2nxVk5WgF4DtQaPC2rWEGlcGqYm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Index.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/lab4_20130235_HaHuyDung",
-    "list.type.of.created.stylesheet": "CSS",
+    "last_opened_file_path": "D:/agency-free-lite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,20 +34,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\HCI\img" />
-      <recent name="D:\HCI\Lab3" />
-      <recent name="D:\HCI\.idea" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\HCI\img" />
-      <recent name="D:\HCI\js" />
-      <recent name="D:\HCI\css" />
-      <recent name="D:\HCI\Lab3" />
-      <recent name="D:\HCI\Lab1" />
+      <recent name="D:\agency-free-lite" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/agency-free-lite/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -117,19 +58,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9b1a66ed-3379-4083-86c6-13b8892cfacc" name="Changes" comment="" />
-      <created>1727494887765</created>
+      <changelist id="b3952aab-c322-420a-926a-f3162db9859f" name="Changes" comment="" />
+      <created>1729914854062</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1727494887765</updated>
-      <workItem from="1727494889119" duration="3156000" />
-      <workItem from="1727526076037" duration="1707000" />
-      <workItem from="1728642207321" duration="4521000" />
-      <workItem from="1729090001473" duration="7421000" />
-      <workItem from="1729298900377" duration="5838000" />
-      <workItem from="1729357329193" duration="22000" />
-      <workItem from="1729856220334" duration="7283000" />
-      <workItem from="1729863798336" duration="13000" />
+      <updated>1729914854062</updated>
+      <workItem from="1729914855600" duration="2282000" />
+      <workItem from="1733903229623" duration="42000" />
     </task>
     <servers />
   </component>

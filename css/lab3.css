@@ -26,3 +26,7 @@
 .carousel-control-next:hover {
     background-color: #218838; /* Màu nền khi hover */
 }
+
+.col-md-4 {
+    padding-bottom: 30px;
+}
