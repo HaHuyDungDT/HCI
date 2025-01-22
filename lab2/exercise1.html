@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +11,23 @@
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    
+
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="../assets/css/slick.css">
-    
+
     <!--====== Magnific Popup css ======-->
     <link rel="stylesheet" href="../assets/css/magnific-popup.css">
-    
+
     <!--====== Line Icons css ======-->
     <link rel="stylesheet" href="../assets/css/LineIcons.css">
-    
+
     <!--====== Default css ======-->
     <link rel="stylesheet" href="../assets/css/default.css">
-    
+
     <!--====== Style css ======-->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
     <!-- Header Section -->
 
@@ -35,55 +36,92 @@
         <h1 style="text-align: center;">Basic Java Program</h1>
         <h5>Description</h5>
         <p>Create a simple "Hello, World!" application that prints "Hello, World!" to the console.</p>
-    
+
         <h5 style="padding-top: 30px; padding-bottom: 20px;">Code Input</h5>
-        <textarea class="form-control code-input" placeholder="Write your code here..." style="height: 300px;"></textarea>
-    
+        <textarea class="form-control code-input" placeholder="Write your code here..."
+            style="height: 300px;"></textarea>
+
         <button class="btn btn-primary mt-2" id="runCodeButton">Run Code</button>
         <button class="btn btn-danger mt-2" id="cleanCodeButton">Clean Code</button>
         <button class="btn btn-success mt-2" id="submitCodeButton">Submit Code</button>
-      
+        <!-- Modal -->
+        <div class="modal fade" id="scoreModal" tabindex="-1" aria-labelledby="scoreModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="scoreModalLabel">Result</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>You scored <span id="userScore">0</span> points!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-    <!-- Scripts for Form Validation and UI Interactions -->
-      <!--====== jquery js ======-->
-      <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-      <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-  
-      <!--====== Bootstrap js ======-->
-      <script src="../assets/js/bootstrap.min.js"></script>
-      <script src="../assets/js/popper.min.js"></script>
-  
-  
-      <!--====== Images Loaded js ======-->
-      <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
-      
-      <!--====== Scrolling Nav js ======-->
-      <script src="../assets/js/jquery.easing.min.js"></script>
-      <script src="../assets/js/scrolling-nav.js"></script>
-      
-      
-      <!--====== Slick js ======-->
-      <script src="../assets/js/slick.min.js"></script>
-      
-      
-      <!--====== Main js ======-->
-      <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById("runCodeButton").addEventListener("click", function () {
+            window.location.href = "exercise.html";
+        });
 
-        
-      <script>
-        document.getElementById("runCodeButton").addEventListener("click", function() {
+        document.getElementById("cleanCodeButton").addEventListener("click", function () {
             window.location.href = "exercise.html";
         });
-    
-        document.getElementById("cleanCodeButton").addEventListener("click", function() {
-            window.location.href = "exercise.html";
+
+        document.getElementById("submitCodeButton").addEventListener("click", function () {
+            // Lấy giá trị của đoạn code từ textarea
+            const userCode = document.querySelector(".code-input").value.trim();
+
+            // Giả lập tính điểm dựa trên nội dung code
+            let score = 0;
+            if (userCode.includes("Hello, World!") || userCode.includes("System.out.println")) {
+                score = 10; // Điểm tối đa
+            } else if (userCode.length > 0) {
+                score = 5; // Điểm trung bình
+            }
+
+            // Hiển thị điểm trong modal
+            document.getElementById("userScore").innerText = score;
+
+            // Kích hoạt modal
+            const scoreModal = new bootstrap.Modal(document.getElementById("scoreModal"));
+            scoreModal.show();
         });
-    
-        document.getElementById("submitCodeButton").addEventListener("click", function() {
-            window.location.href = "exercise.html";
-        });     
+
     </script>
-</body>
-</html>
+    <!-- Scripts for Form Validation and UI Interactions -->
+    <!--====== jquery js ======-->
+    <script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
 
+    <!--====== Bootstrap js ======-->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+
+
+    <!--====== Images Loaded js ======-->
+    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
+
+
+    <!--====== Slick js ======-->
+    <script src="../assets/js/slick.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="../assets/js/main.js"></script>
+
+
+   
+</body>
+
+</html>
