@@ -2,15 +2,10 @@
 <html lang="en">
 
 <head>
-
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--====== Title ======-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ha Huy Dung - My Website</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
@@ -32,13 +27,13 @@
 
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-
+    <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
-    <!--====== HEADER ONE PART START ======-->
-    <header class="header-area">
-        <div class="navbar-area navbar-one navbar-transparent">
+    <!-- Header Section -->
+    <header class="bg-primary text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -47,7 +42,8 @@
                                 <img src="assets/images/logo.svg" alt="Logo">
                             </a>
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne"
+                                aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -55,16 +51,16 @@
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
                                 <ul class="navbar-nav m-auto">
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a class="page-scroll" href="index.html">Home</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item ">
                                         <a class="page-scroll" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="labs.html">Labs</a>
+                                        <a class="page-scroll labs-tab" href="labs.html">Labs</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item active">
                                         <a class="page-scroll" href="result.html">Result</a>
                                     </li>
                                 </ul>
@@ -72,46 +68,93 @@
 
                             <div class="navbar-btn d-none d-sm-inline-block">
                                 <ul>
-                                    <li><a class="light" href="https://hoangkhangkhupho4.github.io/Group_Web/index.html">Let's Go</a></li>
+                                    <li><a class="light" href="#">Let's Go</a></li>
                                 </ul>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
                 </div> <!-- row -->
-            </div> <!-- container -->
+            </div>
         </div>
-
-        <div id="home" class="header-content-area d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header-wrapper">
-                            <div class="header-content">
-                                <h3 class="header-title">Welcome to my perfect website</h3>
-                                <p class="text">Thanks for taking the time to visit my website. I'm Dung Ha Huy, this is my personal website. Let's get started with it.</p>
-                                <div class="header-btn rounded-buttons">
-                                    <a class="main-btn rounded-one" href="https://hoangkhangkhupho4.github.io/Project_Web/index.html">Purchase Now</a>
-                                </div>
-
-                            </div> <!-- header content -->
-
-                            <div class="header-image d-none d-lg-block">
-                                <div class="image">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="header-shape">
-                <img src="assets/images/header-shape.svg" alt="shape">
-            </div> <!-- header-shape -->
-        </div> <!-- header content area -->
+        <!-- Tabs menu -->
     </header>
 
 
-    <!--====== HEADER ONE PART ENDS ======-->
+    <!-- Main Content -->
+    <main style="width: 900px;">
+        <section id="about">
+            <div class="container">
+                <div class="header1">
+                    <h1>Hà Huy Dũng - Result</h1>
+                </div>
+                <div class="container">
+                    <h2>Work done</h2>
+                    <!-- Tab Navigation -->
+                    <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="project-website-tab" data-toggle="tab"
+                                href="#project-website" role="tab" aria-controls="project-website" aria-selected="true">
+                                Project Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="group-website-tab" data-toggle="tab" href="#group-website"
+                                role="tab" aria-controls="group-website" aria-selected="false">
+                                Group Website
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content mt-3" id="projectTabsContent">
+                        <!-- Project Website Tab -->
+                        <div class="tab-pane fade show active" id="project-website" role="tabpanel"
+                            aria-labelledby="project-website-tab">
+                            <p>- Design and implementation of <span class="bold">login</span> functionality</br></p>
+                            <p>- Design and implementation of <span class="bold">register, forgot password</span> functionality</br></p>
+                            <p>- Design and implementation of <span class="bold">admin, dashboard</span> functionality</br></p>
+                            <p>- Design and implementation of <span class="bold">employee management</span> functionality</br></p>
+                            <p>- Design and implementation of <span class="bold">product management</span> functionality</br></p>
+                        </div>
+                        <!-- Group Website Tab -->
+                        <div class="tab-pane fade" id="group-website" role="tabpanel"
+                            aria-labelledby="group-website-tab">
+                            <p>- Design and implementation of <span class="bold">technical</span> functionality</br></p>
+                            <p>- Design and implementation of <span class="bold">contact</span> functionality</br></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section mt-5">
+                    <h2>Learned</h2>
+                    <ul>
+                        <li>
+                            <span class="bold">Create a simple website</span>
+                        </li>
+                        <li> 
+                            <span class="bold">Learn technologies:</span> Html, css, js
+                        </li>
+                        <li> 
+                            <span class="bold">Teamwork skills</span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Review</h2>
+                    <ul>
+                        <li>Actively participate in team work</li>
+                        <li>Contribute 20% of the work</li>
+                        <li>Good teamwork and communication skills</li>
+                        <li>Good at using HTML, CSS, JS</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Tab navigation -->
+        </section>
+    </main>
 
     <!--====== FOOTER PART START ======-->
 
@@ -122,7 +165,7 @@
                     <div class="col-lg-12">
                         <div class="footer-logo-support d-md-flex align-items-end justify-content-between">
                             <div class="footer-logo d-flex align-items-end pt-30">
-                                <a href="index.html"><img src="assets/images/footer-logo.svg" alt="Logo"></a>
+                                <a href="index.html"><img src="assets//images/footer-logo.svg" alt="Logo"></a>
                             </div> <!-- footer logo -->
                         </div> <!-- footer logo support -->
                     </div>
@@ -172,7 +215,7 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-        </div> 
+        </div>
         <!-- footer widget -->
 
         <div class="footer-copyright">
@@ -180,7 +223,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright text-center">
-                            <p class="text">Template Crafted by <a rel="nofollow" href="https://uideck.com">UIdeck</a> - UI Powered by <a el="nofollow" href="https://rebrand.ly/ayroui">AyroUI</a></p>
+                            <p class="text">Template Crafted by <a rel="nofollow" href="https://uideck.com">UIdeck</a> -
+                                UI Powered by <a el="nofollow" href="https://rebrand.ly/ayroui">AyroUI</a></p>
                         </div> <!-- copyright -->
                     </div>
                 </div> <!-- row -->
@@ -189,40 +233,38 @@
     </footer>
 
     <!--====== FOOTER PART ENDS ======-->
-
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!-- Scripts for Form Validation and UI Interactions -->
+    <scripts src="js/lab1.js">
+        </script>
 
 
 
 
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <!--====== jquery js ======-->
+        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-
-
-    <!--====== Images Loaded js ======-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-
-    <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
 
 
-    <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
+        <!--====== Images Loaded js ======-->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+        <!--====== Scrolling Nav js ======-->
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/scrolling-nav.js"></script>
 
 
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+        <!--====== Slick js ======-->
+        <script src="assets/js/slick.min.js"></script>
 
+
+        <!--====== Main js ======-->
+        <script src="assets/js/main.js"></script>
+
+        <script src="js/all.js"></script>
 </body>
 
 </html>

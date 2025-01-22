@@ -112,6 +112,14 @@ main {
     display: inline-block;
     padding-bottom: 5px;
 }
+.container h2 {
+    font-size: 1.5rem;
+    color: #213862;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6d02;
+    display: inline-block;
+    padding-bottom: 5px;
+}
 
 /* Section Content */
 .section p {
